@@ -28,7 +28,12 @@ export default function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
-          <Container>
+          <Container sx={{
+            maxWidth: { lg: "1200px", md: "1000px", sm: "640px" },
+            width: { lg: "100%", sm: "90%", xs: "80%" },
+            ml: { md: '0' },
+            mr: { md: '0' }
+          }}>
             <Box>
               <Box sx={{ width: "66%", m: "auto auto 55px", }}>
                 <Typography sx={{

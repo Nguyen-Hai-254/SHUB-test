@@ -69,8 +69,22 @@ export default function MySwiper() {
         <>
             <Box>
                 <Swiper
-                    slidesPerView={6}
+                    slidesPerView="auto"
                     spaceBetween={32}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 2,
+                        },
+                        768: {
+                            slidesPerView: 3,
+                        },
+                        1024: {
+                            slidesPerView: 5,
+                        },
+                        1200: {
+                            slidesPerView: 6,
+                        }
+                    }}
                     freeMode={true}
                     loop={true}
                     pagination={false}
